@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {Item, Title, Markets, ButtonsWrapper, Button} from "./styles";
+import {Item, Title, Markets} from "./styles";
 import Buttons from '../Buttons';
 
 export class ListItem extends Component {
   render() {
-    const {item, data, selections} = this.props;
-    const selectionsStore = data.entities.selections;
+    const {item, data} = this.props;
     return <Item>
       <Title>{item.name}</Title>
       {item.markets.map(market => {

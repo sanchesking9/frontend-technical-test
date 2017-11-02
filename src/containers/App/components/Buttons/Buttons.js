@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { ButtonsWrapper, Button } from './styles';
 import {select, unselect} from "../../../../actions/selections";
 
-class Buttons extends Component {
+export class Buttons extends Component {
   _onClick = (item, market) => {
     const {selections} = this.props;
     if (selections[item]) {

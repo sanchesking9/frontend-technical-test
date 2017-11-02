@@ -23,6 +23,10 @@ export const MOCK = {
     MOCK.unselectedClick = item;
   },
   unselectedClick: 0,
+  select: (item) => {
+    MOCK.selectedClick = item;
+  },
+  selectedClick: 0,
   item: {
     markets: [1,2]
   }
