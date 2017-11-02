@@ -15,7 +15,7 @@ export class SidebarList extends Component {
     return <SidebarListWrapper>
       {Object.keys(selections).map(item => {
         return <Item key={item}>
-            {entities.selections[item].name}
+            {entities.selections[item].name} {entities.markets[selections[item]].name}
             <Price>{entities.selections[item].price}</Price>
             <ButtonDelete onClick={this._onClick.bind(this, item)}>Delete</ButtonDelete>
           </Item>
