@@ -18,7 +18,6 @@ export class ListItem extends Component {
   }
 }
 
-export default connect(state => {
-  const {data} = state;
+export default connect(({data}) => {
   return {data};
 })(ListItem);

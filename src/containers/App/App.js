@@ -18,6 +18,4 @@ export class App extends Component {
   }
 }
 
-export default connect(() => {
-  return {};
-}, {getData})(App);
+export default connect(null, {getData})(App);

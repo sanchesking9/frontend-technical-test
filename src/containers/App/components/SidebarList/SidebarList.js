@@ -24,7 +24,6 @@ export class SidebarList extends Component {
   }
 }
 
-export default connect(state => {
-  const {data, selections} = state;
+export default connect(({data, selections}) => {
   return {data, selections};
 }, {unselect})(SidebarList);
